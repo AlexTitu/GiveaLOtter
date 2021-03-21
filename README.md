@@ -1,3 +1,6 @@
 # main_rep
 
-FIRST TRY
+ de fiecare data cand deschidem git bash
+
+eval `ssh-agent`
+ssh-add ~/numele_folderului
