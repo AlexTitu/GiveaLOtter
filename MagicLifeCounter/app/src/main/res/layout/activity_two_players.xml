@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TwoPlayers"
+    android:background="@color/black"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:layout_above="@+id/Player2"
+        android:background="@color/green_forest"
+        android:id="@+id/Player1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:textSize="30sp"
+            android:rotation="180"
+            android:layout_below="@id/healthP1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fadeP1"
+            android:textColor="#5F5F5F"
+            />
+
+        <ImageButton
+            android:id="@+id/imgButtonP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color64"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            />
+        <TextView
+            android:id="@+id/healthP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20"
+            android:gravity="center"
+            android:rotation="180"
+            android:textSize="100sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:src="@drawable/orangeminus32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/healthP1"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:src="@drawable/greenplus32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/healthP1"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/minusP1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/imgButtonP1"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/healthP1"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/plusP1"
+            android:layout_width="300dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/healthP1"
+            android:layout_above="@+id/backButton"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/back48"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageButton
+            android:id="@+id/statsP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/statsbar48"
+            android:background="@android:color/transparent"
+            android:rotation="180"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentContainer"/>
+
+        <RelativeLayout
+            android:id="@+id/Player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Player1"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="+1"
+                android:id="@+id/fadeP2"
+                android:layout_above="@id/healthP2"
+                android:textColor="#5F5F5F"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageButton
+                android:id="@+id/statsP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/statsbar48"
+                android:background="@android:color/transparent"
+                />
+
+            <ImageButton
+                android:id="@+id/lifeReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lifereset" />
+
+            <ImageButton
+                android:id="@+id/imgButtonP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/color64" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@id/healthP2"
+                android:src="@drawable/orangeminus32" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/healthP2"
+                android:src="@drawable/greenplus32" />
+
+            <TextView
+                android:id="@+id/healthP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="100sp" />
+
+            <Button
+                android:id="@+id/minusP2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imgButtonP2"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/healthP2"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/plusP2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lifeReset"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/healthP2"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentP1"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/playerbuttonlayout"
+        >
+
+        <ImageButton
+            android:id="@+id/resetCommPoison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/liferesetwhite"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="8dp"
+            android:rotation="180"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Player 1"
+            android:rotation="180"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/closeFragment"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/back48white"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poisondamage"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/poisondmgtxt"
+            android:layout_width="wrap_content"
+            android:rotation="180"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="Poison"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/poisoncounterP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_centerInParent="true"
+            android:rotation="180"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textSize="40sp"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/poisoncounterP1"
+            android:id="@+id/minuspoisonP1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/orangeminus32"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/poisoncounterP1"
+            android:id="@+id/pluspoisonP1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/greenplus32"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commanderdamagelayout"
+        android:layout_weight="1">
+
+
+
+    <TextView
+        android:id="@+id/commdmgtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Commander Damage"
+        android:rotation="180"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/commanderdamageP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:text="0"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/commanderdamageP1"
+            android:id="@+id/minusCommDmgP1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/orangeminus32"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/commanderdamageP1"
+            android:id="@+id/plusCommDmgP1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/greenplus32"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
