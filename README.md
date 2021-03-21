@@ -3,4 +3,4 @@
  de fiecare data cand deschidem git bash
 
 eval `ssh-agent`
-ssh-add ~/numele_folderului
+ssh-add drag and drop key.txt
