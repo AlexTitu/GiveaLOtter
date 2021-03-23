@@ -19,7 +19,7 @@ git push // press enter
 
 sourcetree tortoise //ceva legat de erori
 
-git checkout origin <branch_name> //schimbi branchul
+git checkout <branch_name> //schimbi branchul
 
 git checkout -b <name_of_your_new_branch> //branch nou
 
