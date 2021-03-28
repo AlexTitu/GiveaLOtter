@@ -29,3 +29,9 @@ git branch -a //vezi toate branch-urile create
 
 mai multe comenzi pentru branches aici 
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+Google account:
+lOttersteam
+mar78Ti=e
+
+1.04.2000
